@@ -1,5 +1,5 @@
 <?php 
-defined("BASEPATH") OR exit['No direct script access allowed'];
+defined("BASEPATH") OR exit('No direct script access allowed');
 
  class Mahasiswa extends CI_Controller
  {
@@ -9,12 +9,12 @@ defined("BASEPATH") OR exit['No direct script access allowed'];
  		parent::__construct();
 		$this->load->model('Mahasiswa_model');
  	}
- /*public function index()
- {
- 	$data['nama'] = "Kim Jefry";
- 	$data['prodi'] = "MIF";
- 	$this->load->view('view_mahasiswa',$data);
- }*/
+	/*public function index()
+	 {
+	 	$data['nama'] = "Kim Jefry";
+	 	$data['prodi'] = "MIF";
+	 	$this->load->view('view_mahasiswa',$data);
+	 }*/
  	/*public function index(){
 			$data['Mahasiswa'] = [
 				["nama"=>"Kim Jefry","prodi"=>"MIF"],
@@ -28,7 +28,7 @@ defined("BASEPATH") OR exit['No direct script access allowed'];
 		$data['Mahasiswa'] = $this->Mahasiswa_model->get_data();
 		$this->load->view('view_mahasiswa', $data);
 	}
-	/*public function soal_a(){
+		/*public function soal_a(){
 			$data['Prodi'] = $this->Mahasiswa_model->get_prodi();
 			$this->load->view('view_prodi',$data);
 		}
@@ -51,4 +51,6 @@ defined("BASEPATH") OR exit['No direct script access allowed'];
  	public function profil()
  	{
  		echo "ini adalah method profil pada controller Mahasiswa";
- 	} ?>
+ 	}
+ } 
+ ?>

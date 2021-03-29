@@ -1,6 +1,6 @@
 <?php 
 
- class Mahasiswa extends model CI_Model
+ class Mahasiswa_model extends CI_Model
  {
  	
  	public function get_data()
